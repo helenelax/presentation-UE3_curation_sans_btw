@@ -1,0 +1,126 @@
+/*
+ * GitPitch Slideshow Custom CSS Styling
+ *
+ * For details, visit Wiki:
+ * https://github.com/gitpitch/gitpitch/wiki/Slideshow-Custom-CSS
+ */
+
+body {
+  /* fallback for old browsers */
+  background: #f2994a;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to left, #f2994a, #f2c94c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to left, #f2994a, #f2c94c);
+}
+
+reveal section img {
+  border: 0;
+  box-shadow: none;
+}
+
+.reveal pre {
+  width: 100%;
+  box-shadow : none;
+}
+
+.reveal pre code {
+  font-size: 1.2em;
+  line-height: 1.2;
+  max-height: 50vh !important;
+  opacity: 0.95;
+  border-radius: 10px;
+}
+
+/*ajout LN pour aligner à gauche*/
+.reveal .slides {
+    text-align: left;
+}
+/*fin ajout*/
+
+.reveal .slides section .code-presenting-annotation {
+  color: white;
+  background: #af5a0e; /*orange foncé*/
+  padding: 1px 15px;
+  border-radius: 15px;
+  opacity: 0.75 !important;
+  font-size: 50% !important;
+}
+
+/*ajout Hélène pour aligner à gauche*/
+.reveal .slides section>* {
+    margin-left: 0;
+    margin-right: 0;
+}
+/*fin ajout LN*/
+
+.reveal p span.slide-title {
+  color: white;
+  background: #e27b1f; /*orange*/
+  padding: 4px 15px;
+  opacity: 0.75 !important;
+  /*border-radius: 15px;*/
+}
+
+.reveal div.left {
+    float: left;
+    z-index: -10;
+    width: 35%;
+    font-size: 0.8em;
+    border: 0;
+}
+
+.reveal div.right {
+    float: right;
+    z-index: -10;
+    width: 65%;
+    font-size: 0.8em;
+}
+
+.reveal a.pro-link {
+    font-size: 0.5em;
+}
+
+.reveal a {
+    color: #af5a08 !important;
+}
+
+.reveal a:hover {
+    color: #e27b1f !important;
+}
+
+#gp-logo img {
+  max-height: 5em; /*change la taille du logo*/
+  max-width: none;
+}
+
+.white {
+  color: white;
+}
+
+.centrage {
+  text-align:center;
+}
+
+/*non utilisé dans cette présentation*/
+.gp-tip { font-size : 1.5em; }
+
+.gp-contact { font-size : 1.4em; }
+
+.gp-download { margin-left: 10px; }
+
+/*fin du non utilisé*/
+
+/*ajout LN suite à l'alignement à gauche généralisé*/
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  text-align : center;
+  margin-bottom : 80px;
+}
+
+
